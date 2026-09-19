@@ -1,0 +1,85 @@
+{
+  "experiment": "source_disjoint_audio_classifier",
+  "feature_type": "MFCC mean + standard deviation",
+  "sample_rate": 16000,
+  "n_mfcc": 40,
+  "n_estimators": 200,
+  "random_seed": 42,
+  "training_samples": 426,
+  "validation_samples": 90,
+  "test_samples": 94,
+  "validation": {
+    "samples": 90,
+    "accuracy": 0.8444444444444444,
+    "classification_report": {
+      "bird": {
+        "precision": 0.9285714285714286,
+        "recall": 0.9285714285714286,
+        "f1-score": 0.9285714285714286,
+        "support": 28.0
+      },
+      "cat": {
+        "precision": 0.78125,
+        "recall": 0.8064516129032258,
+        "f1-score": 0.7936507936507936,
+        "support": 31.0
+      },
+      "dog": {
+        "precision": 0.8333333333333334,
+        "recall": 0.8064516129032258,
+        "f1-score": 0.819672131147541,
+        "support": 31.0
+      },
+      "accuracy": 0.8444444444444444,
+      "macro avg": {
+        "precision": 0.847718253968254,
+        "recall": 0.8471582181259599,
+        "f1-score": 0.8472981177899211,
+        "support": 90.0
+      },
+      "weighted avg": {
+        "precision": 0.8450231481481483,
+        "recall": 0.8444444444444444,
+        "f1-score": 0.8445890074305373,
+        "support": 90.0
+      }
+    }
+  },
+  "test": {
+    "samples": 94,
+    "accuracy": 0.8617021276595744,
+    "classification_report": {
+      "bird": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1-score": 0.9,
+        "support": 30.0
+      },
+      "cat": {
+        "precision": 0.8709677419354839,
+        "recall": 0.84375,
+        "f1-score": 0.8571428571428571,
+        "support": 32.0
+      },
+      "dog": {
+        "precision": 0.8181818181818182,
+        "recall": 0.84375,
+        "f1-score": 0.8307692307692308,
+        "support": 32.0
+      },
+      "accuracy": 0.8617021276595744,
+      "macro avg": {
+        "precision": 0.8630498533724341,
+        "recall": 0.8624999999999999,
+        "f1-score": 0.8626373626373627,
+        "support": 94.0
+      },
+      "weighted avg": {
+        "precision": 0.8622636800399327,
+        "recall": 0.8617021276595744,
+        "f1-score": 0.8618424129062427,
+        "support": 94.0
+      }
+    }
+  }
+}

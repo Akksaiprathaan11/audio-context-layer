@@ -1,14 +1,45 @@
+# Virtual environment
 venv/
 .venv/
+env/
+
+# Python cache
 __pycache__/
-*.pyc
-.env
+*.py[cod]
+.pytest_cache/
+
+# VS Code local settings
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large/raw audio dataset
+data/raw/
+data/original/
+
+# Generated audio/context files
+data/processed/context_audio/
+data/processed/context_annotations/
+data/processed/predictions/
+data/processed/contexts/
+
+# Temporary files
+*.tmp
+*.log
+
+# OS files
 .DS_Store
-data/raw/*
-data/processed/*
-models/*
-results/*.json
-results/*.png
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!models/.gitkeep
+Thumbs.db
+
+# Generated processed JSON files
+data/processed/audio_*.json
+
+# Generated QA artifacts
+data/processed/qa/
+
+# Previous/obsolete model
+models/*_pre_source_split*.joblib
+
+# Previous/obsolete evaluation results
+results/*_pre_source_split*.json
