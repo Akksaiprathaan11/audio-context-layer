@@ -1,0 +1,17 @@
+numpy
+pandas
+scipy
+librosa
+soundfile
+scikit-learn
+matplotlib
+seaborn
+torch
+torchaudio
+transformers
+datasets
+fastapi
+uvicorn
+streamlit
+google-generativeai
+python-multipart

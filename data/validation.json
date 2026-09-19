@@ -1,0 +1,1823 @@
+[
+  {
+    "audio_id": "context_0071",
+    "audio_file": "context_audio/context_0071.wav",
+    "duration": 3.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "bird",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\bird\\27b03931_nohash_0.wav"
+      },
+      {
+        "name": "cat",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\cat\\bbd0bbd0_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\bird\\750e3e75_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains bird and cat sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 bird sound event(s)."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 cat sound event(s)."
+      },
+      {
+        "question": "What happens after the first bird?",
+        "type": "temporal",
+        "answer": "The cat occurs after the first bird."
+      },
+      {
+        "question": "What happens before the cat?",
+        "type": "temporal",
+        "answer": "The bird occurs before the cat."
+      },
+      {
+        "question": "What happens after the cat?",
+        "type": "temporal",
+        "answer": "The bird occurs after the cat."
+      },
+      {
+        "question": "What happens before the second bird?",
+        "type": "temporal",
+        "answer": "The cat occurs before the second bird."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The bird occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The bird occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: bird -> cat -> bird."
+      },
+      {
+        "question": "How long does the first bird sound last?",
+        "type": "duration",
+        "answer": "The first bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the cat sound last?",
+        "type": "duration",
+        "answer": "The cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second bird sound last?",
+        "type": "duration",
+        "answer": "The second bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0072",
+    "audio_file": "context_audio/context_0072.wav",
+    "duration": 4.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "cat",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\cat\\1a9afd33_nohash_0.wav"
+      },
+      {
+        "name": "cat",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\cat\\5c8af87a_nohash_0.wav"
+      },
+      {
+        "name": "cat",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\cat\\5c8af87a_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 3.0,
+        "end": 4.0,
+        "source_file": "data\\raw\\bird\\214ccb20_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains cat and bird sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 bird sound event(s)."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 3 cat sound event(s)."
+      },
+      {
+        "question": "What happens after the first cat?",
+        "type": "temporal",
+        "answer": "The cat occurs after the first cat."
+      },
+      {
+        "question": "What happens before the second cat?",
+        "type": "temporal",
+        "answer": "The cat occurs before the second cat."
+      },
+      {
+        "question": "What happens after the second cat?",
+        "type": "temporal",
+        "answer": "The cat occurs after the second cat."
+      },
+      {
+        "question": "What happens before the third cat?",
+        "type": "temporal",
+        "answer": "The cat occurs before the third cat."
+      },
+      {
+        "question": "What happens after the third cat?",
+        "type": "temporal",
+        "answer": "The bird occurs after the third cat."
+      },
+      {
+        "question": "What happens before the bird?",
+        "type": "temporal",
+        "answer": "The cat occurs before the bird."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The cat occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The bird occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: cat -> cat -> cat -> bird."
+      },
+      {
+        "question": "How long does the first cat sound last?",
+        "type": "duration",
+        "answer": "The first cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second cat sound last?",
+        "type": "duration",
+        "answer": "The second cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the third cat sound last?",
+        "type": "duration",
+        "answer": "The third cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the bird sound last?",
+        "type": "duration",
+        "answer": "The bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0073",
+    "audio_file": "context_audio/context_0073.wav",
+    "duration": 3.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "dog",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\dog\\8494fba8_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\bird\\0b56bcfe_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\bird\\e71b4ce6_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains dog and bird sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 bird sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the dog?",
+        "type": "temporal",
+        "answer": "The bird occurs after the dog."
+      },
+      {
+        "question": "What happens before the first bird?",
+        "type": "temporal",
+        "answer": "The dog occurs before the first bird."
+      },
+      {
+        "question": "What happens after the first bird?",
+        "type": "temporal",
+        "answer": "The bird occurs after the first bird."
+      },
+      {
+        "question": "What happens before the second bird?",
+        "type": "temporal",
+        "answer": "The bird occurs before the second bird."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The dog occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The bird occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: dog -> bird -> bird."
+      },
+      {
+        "question": "How long does the dog sound last?",
+        "type": "duration",
+        "answer": "The dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the first bird sound last?",
+        "type": "duration",
+        "answer": "The first bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second bird sound last?",
+        "type": "duration",
+        "answer": "The second bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0074",
+    "audio_file": "context_audio/context_0074.wav",
+    "duration": 3.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "dog",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\dog\\e48a80ed_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\bird\\7add4c5f_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\bird\\00f0204f_nohash_1.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains dog and bird sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 bird sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the dog?",
+        "type": "temporal",
+        "answer": "The bird occurs after the dog."
+      },
+      {
+        "question": "What happens before the first bird?",
+        "type": "temporal",
+        "answer": "The dog occurs before the first bird."
+      },
+      {
+        "question": "What happens after the first bird?",
+        "type": "temporal",
+        "answer": "The bird occurs after the first bird."
+      },
+      {
+        "question": "What happens before the second bird?",
+        "type": "temporal",
+        "answer": "The bird occurs before the second bird."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The dog occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The bird occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: dog -> bird -> bird."
+      },
+      {
+        "question": "How long does the dog sound last?",
+        "type": "duration",
+        "answer": "The dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the first bird sound last?",
+        "type": "duration",
+        "answer": "The first bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second bird sound last?",
+        "type": "duration",
+        "answer": "The second bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0075",
+    "audio_file": "context_audio/context_0075.wav",
+    "duration": 3.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "dog",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\dog\\3bdf05d3_nohash_1.wav"
+      },
+      {
+        "name": "bird",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\bird\\7799c9cd_nohash_0.wav"
+      },
+      {
+        "name": "cat",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\cat\\13199b79_nohash_1.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains dog, bird and cat sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 bird sound event(s)."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 cat sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the dog?",
+        "type": "temporal",
+        "answer": "The bird occurs after the dog."
+      },
+      {
+        "question": "What happens before the bird?",
+        "type": "temporal",
+        "answer": "The dog occurs before the bird."
+      },
+      {
+        "question": "What happens after the bird?",
+        "type": "temporal",
+        "answer": "The cat occurs after the bird."
+      },
+      {
+        "question": "What happens before the cat?",
+        "type": "temporal",
+        "answer": "The bird occurs before the cat."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The dog occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The cat occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: dog -> bird -> cat."
+      },
+      {
+        "question": "How long does the dog sound last?",
+        "type": "duration",
+        "answer": "The dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the bird sound last?",
+        "type": "duration",
+        "answer": "The bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the cat sound last?",
+        "type": "duration",
+        "answer": "The cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0076",
+    "audio_file": "context_audio/context_0076.wav",
+    "duration": 3.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "dog",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\dog\\34805883_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\bird\\750e3e75_nohash_0.wav"
+      },
+      {
+        "name": "dog",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\dog\\f5e5e8b0_nohash_1.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains dog and bird sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 bird sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the first dog?",
+        "type": "temporal",
+        "answer": "The bird occurs after the first dog."
+      },
+      {
+        "question": "What happens before the bird?",
+        "type": "temporal",
+        "answer": "The dog occurs before the bird."
+      },
+      {
+        "question": "What happens after the bird?",
+        "type": "temporal",
+        "answer": "The dog occurs after the bird."
+      },
+      {
+        "question": "What happens before the second dog?",
+        "type": "temporal",
+        "answer": "The bird occurs before the second dog."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The dog occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The dog occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: dog -> bird -> dog."
+      },
+      {
+        "question": "How long does the first dog sound last?",
+        "type": "duration",
+        "answer": "The first dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the bird sound last?",
+        "type": "duration",
+        "answer": "The bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second dog sound last?",
+        "type": "duration",
+        "answer": "The second dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0077",
+    "audio_file": "context_audio/context_0077.wav",
+    "duration": 4.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "bird",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\bird\\6e2ef3d5_nohash_1.wav"
+      },
+      {
+        "name": "dog",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\dog\\34805883_nohash_0.wav"
+      },
+      {
+        "name": "dog",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\dog\\44f68a83_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 3.0,
+        "end": 4.0,
+        "source_file": "data\\raw\\bird\\edd8bfe3_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains bird and dog sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 bird sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the first bird?",
+        "type": "temporal",
+        "answer": "The dog occurs after the first bird."
+      },
+      {
+        "question": "What happens before the first dog?",
+        "type": "temporal",
+        "answer": "The bird occurs before the first dog."
+      },
+      {
+        "question": "What happens after the first dog?",
+        "type": "temporal",
+        "answer": "The dog occurs after the first dog."
+      },
+      {
+        "question": "What happens before the second dog?",
+        "type": "temporal",
+        "answer": "The dog occurs before the second dog."
+      },
+      {
+        "question": "What happens after the second dog?",
+        "type": "temporal",
+        "answer": "The bird occurs after the second dog."
+      },
+      {
+        "question": "What happens before the second bird?",
+        "type": "temporal",
+        "answer": "The dog occurs before the second bird."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The bird occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The bird occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: bird -> dog -> dog -> bird."
+      },
+      {
+        "question": "How long does the first bird sound last?",
+        "type": "duration",
+        "answer": "The first bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the first dog sound last?",
+        "type": "duration",
+        "answer": "The first dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second dog sound last?",
+        "type": "duration",
+        "answer": "The second dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second bird sound last?",
+        "type": "duration",
+        "answer": "The second bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0078",
+    "audio_file": "context_audio/context_0078.wav",
+    "duration": 3.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "cat",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\cat\\bc065a17_nohash_0.wav"
+      },
+      {
+        "name": "dog",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\dog\\9b027ecf_nohash_0.wav"
+      },
+      {
+        "name": "cat",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\cat\\ad1429cf_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains cat and dog sounds."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 cat sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the first cat?",
+        "type": "temporal",
+        "answer": "The dog occurs after the first cat."
+      },
+      {
+        "question": "What happens before the dog?",
+        "type": "temporal",
+        "answer": "The cat occurs before the dog."
+      },
+      {
+        "question": "What happens after the dog?",
+        "type": "temporal",
+        "answer": "The cat occurs after the dog."
+      },
+      {
+        "question": "What happens before the second cat?",
+        "type": "temporal",
+        "answer": "The dog occurs before the second cat."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The cat occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The cat occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: cat -> dog -> cat."
+      },
+      {
+        "question": "How long does the first cat sound last?",
+        "type": "duration",
+        "answer": "The first cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the dog sound last?",
+        "type": "duration",
+        "answer": "The dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second cat sound last?",
+        "type": "duration",
+        "answer": "The second cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0079",
+    "audio_file": "context_audio/context_0079.wav",
+    "duration": 5.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "cat",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\cat\\33b5516a_nohash_0.wav"
+      },
+      {
+        "name": "dog",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\dog\\d107dc42_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\bird\\f5733968_nohash_0.wav"
+      },
+      {
+        "name": "dog",
+        "start": 3.0,
+        "end": 4.0,
+        "source_file": "data\\raw\\dog\\62581901_nohash_0.wav"
+      },
+      {
+        "name": "dog",
+        "start": 4.0,
+        "end": 5.0,
+        "source_file": "data\\raw\\dog\\f3d06008_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains cat, dog and bird sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 bird sound event(s)."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 cat sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 3 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the cat?",
+        "type": "temporal",
+        "answer": "The dog occurs after the cat."
+      },
+      {
+        "question": "What happens before the first dog?",
+        "type": "temporal",
+        "answer": "The cat occurs before the first dog."
+      },
+      {
+        "question": "What happens after the first dog?",
+        "type": "temporal",
+        "answer": "The bird occurs after the first dog."
+      },
+      {
+        "question": "What happens before the bird?",
+        "type": "temporal",
+        "answer": "The dog occurs before the bird."
+      },
+      {
+        "question": "What happens after the bird?",
+        "type": "temporal",
+        "answer": "The dog occurs after the bird."
+      },
+      {
+        "question": "What happens before the second dog?",
+        "type": "temporal",
+        "answer": "The bird occurs before the second dog."
+      },
+      {
+        "question": "What happens after the second dog?",
+        "type": "temporal",
+        "answer": "The dog occurs after the second dog."
+      },
+      {
+        "question": "What happens before the third dog?",
+        "type": "temporal",
+        "answer": "The dog occurs before the third dog."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The cat occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The dog occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: cat -> dog -> bird -> dog -> dog."
+      },
+      {
+        "question": "How long does the cat sound last?",
+        "type": "duration",
+        "answer": "The cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the first dog sound last?",
+        "type": "duration",
+        "answer": "The first dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the bird sound last?",
+        "type": "duration",
+        "answer": "The bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second dog sound last?",
+        "type": "duration",
+        "answer": "The second dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the third dog sound last?",
+        "type": "duration",
+        "answer": "The third dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0080",
+    "audio_file": "context_audio/context_0080.wav",
+    "duration": 3.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "dog",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\dog\\d7467392_nohash_1.wav"
+      },
+      {
+        "name": "cat",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\cat\\03cf93b1_nohash_0.wav"
+      },
+      {
+        "name": "dog",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\dog\\72be9202_nohash_3.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains dog and cat sounds."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 cat sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the first dog?",
+        "type": "temporal",
+        "answer": "The cat occurs after the first dog."
+      },
+      {
+        "question": "What happens before the cat?",
+        "type": "temporal",
+        "answer": "The dog occurs before the cat."
+      },
+      {
+        "question": "What happens after the cat?",
+        "type": "temporal",
+        "answer": "The dog occurs after the cat."
+      },
+      {
+        "question": "What happens before the second dog?",
+        "type": "temporal",
+        "answer": "The cat occurs before the second dog."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The dog occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The dog occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: dog -> cat -> dog."
+      },
+      {
+        "question": "How long does the first dog sound last?",
+        "type": "duration",
+        "answer": "The first dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the cat sound last?",
+        "type": "duration",
+        "answer": "The cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second dog sound last?",
+        "type": "duration",
+        "answer": "The second dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0081",
+    "audio_file": "context_audio/context_0081.wav",
+    "duration": 3.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "dog",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\dog\\748cb308_nohash_2.wav"
+      },
+      {
+        "name": "bird",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\bird\\0b56bcfe_nohash_0.wav"
+      },
+      {
+        "name": "dog",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\dog\\f297e878_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains dog and bird sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 bird sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the first dog?",
+        "type": "temporal",
+        "answer": "The bird occurs after the first dog."
+      },
+      {
+        "question": "What happens before the bird?",
+        "type": "temporal",
+        "answer": "The dog occurs before the bird."
+      },
+      {
+        "question": "What happens after the bird?",
+        "type": "temporal",
+        "answer": "The dog occurs after the bird."
+      },
+      {
+        "question": "What happens before the second dog?",
+        "type": "temporal",
+        "answer": "The bird occurs before the second dog."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The dog occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The dog occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: dog -> bird -> dog."
+      },
+      {
+        "question": "How long does the first dog sound last?",
+        "type": "duration",
+        "answer": "The first dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the bird sound last?",
+        "type": "duration",
+        "answer": "The bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second dog sound last?",
+        "type": "duration",
+        "answer": "The second dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0082",
+    "audio_file": "context_audio/context_0082.wav",
+    "duration": 5.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "cat",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\cat\\96c66ab7_nohash_2.wav"
+      },
+      {
+        "name": "dog",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\dog\\19785c4e_nohash_0.wav"
+      },
+      {
+        "name": "cat",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\cat\\f632210f_nohash_1.wav"
+      },
+      {
+        "name": "cat",
+        "start": 3.0,
+        "end": 4.0,
+        "source_file": "data\\raw\\cat\\1dce06e8_nohash_1.wav"
+      },
+      {
+        "name": "cat",
+        "start": 4.0,
+        "end": 5.0,
+        "source_file": "data\\raw\\cat\\bc065a17_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains cat and dog sounds."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 4 cat sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the first cat?",
+        "type": "temporal",
+        "answer": "The dog occurs after the first cat."
+      },
+      {
+        "question": "What happens before the dog?",
+        "type": "temporal",
+        "answer": "The cat occurs before the dog."
+      },
+      {
+        "question": "What happens after the dog?",
+        "type": "temporal",
+        "answer": "The cat occurs after the dog."
+      },
+      {
+        "question": "What happens before the second cat?",
+        "type": "temporal",
+        "answer": "The dog occurs before the second cat."
+      },
+      {
+        "question": "What happens after the second cat?",
+        "type": "temporal",
+        "answer": "The cat occurs after the second cat."
+      },
+      {
+        "question": "What happens before the third cat?",
+        "type": "temporal",
+        "answer": "The cat occurs before the third cat."
+      },
+      {
+        "question": "What happens after the third cat?",
+        "type": "temporal",
+        "answer": "The cat occurs after the third cat."
+      },
+      {
+        "question": "What happens before the fourth cat?",
+        "type": "temporal",
+        "answer": "The cat occurs before the fourth cat."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The cat occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The cat occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: cat -> dog -> cat -> cat -> cat."
+      },
+      {
+        "question": "How long does the first cat sound last?",
+        "type": "duration",
+        "answer": "The first cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the dog sound last?",
+        "type": "duration",
+        "answer": "The dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second cat sound last?",
+        "type": "duration",
+        "answer": "The second cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the third cat sound last?",
+        "type": "duration",
+        "answer": "The third cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the fourth cat sound last?",
+        "type": "duration",
+        "answer": "The fourth cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0083",
+    "audio_file": "context_audio/context_0083.wav",
+    "duration": 4.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "cat",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\cat\\784e281a_nohash_0.wav"
+      },
+      {
+        "name": "cat",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\cat\\1bc45db9_nohash_1.wav"
+      },
+      {
+        "name": "bird",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\bird\\73cccfaf_nohash_1.wav"
+      },
+      {
+        "name": "bird",
+        "start": 3.0,
+        "end": 4.0,
+        "source_file": "data\\raw\\bird\\72aa7259_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains cat and bird sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 bird sound event(s)."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 cat sound event(s)."
+      },
+      {
+        "question": "What happens after the first cat?",
+        "type": "temporal",
+        "answer": "The cat occurs after the first cat."
+      },
+      {
+        "question": "What happens before the second cat?",
+        "type": "temporal",
+        "answer": "The cat occurs before the second cat."
+      },
+      {
+        "question": "What happens after the second cat?",
+        "type": "temporal",
+        "answer": "The bird occurs after the second cat."
+      },
+      {
+        "question": "What happens before the first bird?",
+        "type": "temporal",
+        "answer": "The cat occurs before the first bird."
+      },
+      {
+        "question": "What happens after the first bird?",
+        "type": "temporal",
+        "answer": "The bird occurs after the first bird."
+      },
+      {
+        "question": "What happens before the second bird?",
+        "type": "temporal",
+        "answer": "The bird occurs before the second bird."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The cat occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The bird occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: cat -> cat -> bird -> bird."
+      },
+      {
+        "question": "How long does the first cat sound last?",
+        "type": "duration",
+        "answer": "The first cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second cat sound last?",
+        "type": "duration",
+        "answer": "The second cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the first bird sound last?",
+        "type": "duration",
+        "answer": "The first bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second bird sound last?",
+        "type": "duration",
+        "answer": "The second bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0084",
+    "audio_file": "context_audio/context_0084.wav",
+    "duration": 5.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "dog",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\dog\\f5e5e8b0_nohash_1.wav"
+      },
+      {
+        "name": "dog",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\dog\\748cb308_nohash_2.wav"
+      },
+      {
+        "name": "dog",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\dog\\d7467392_nohash_1.wav"
+      },
+      {
+        "name": "cat",
+        "start": 3.0,
+        "end": 4.0,
+        "source_file": "data\\raw\\cat\\f5733968_nohash_0.wav"
+      },
+      {
+        "name": "cat",
+        "start": 4.0,
+        "end": 5.0,
+        "source_file": "data\\raw\\cat\\1dce06e8_nohash_1.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains dog and cat sounds."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 cat sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 3 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the first dog?",
+        "type": "temporal",
+        "answer": "The dog occurs after the first dog."
+      },
+      {
+        "question": "What happens before the second dog?",
+        "type": "temporal",
+        "answer": "The dog occurs before the second dog."
+      },
+      {
+        "question": "What happens after the second dog?",
+        "type": "temporal",
+        "answer": "The dog occurs after the second dog."
+      },
+      {
+        "question": "What happens before the third dog?",
+        "type": "temporal",
+        "answer": "The dog occurs before the third dog."
+      },
+      {
+        "question": "What happens after the third dog?",
+        "type": "temporal",
+        "answer": "The cat occurs after the third dog."
+      },
+      {
+        "question": "What happens before the first cat?",
+        "type": "temporal",
+        "answer": "The dog occurs before the first cat."
+      },
+      {
+        "question": "What happens after the first cat?",
+        "type": "temporal",
+        "answer": "The cat occurs after the first cat."
+      },
+      {
+        "question": "What happens before the second cat?",
+        "type": "temporal",
+        "answer": "The cat occurs before the second cat."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The dog occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The cat occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: dog -> dog -> dog -> cat -> cat."
+      },
+      {
+        "question": "How long does the first dog sound last?",
+        "type": "duration",
+        "answer": "The first dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second dog sound last?",
+        "type": "duration",
+        "answer": "The second dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the third dog sound last?",
+        "type": "duration",
+        "answer": "The third dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the first cat sound last?",
+        "type": "duration",
+        "answer": "The first cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second cat sound last?",
+        "type": "duration",
+        "answer": "The second cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  },
+  {
+    "audio_id": "context_0085",
+    "audio_file": "context_audio/context_0085.wav",
+    "duration": 5.0,
+    "environment": "synthetic_multi_event",
+    "split": "validation",
+    "events": [
+      {
+        "name": "dog",
+        "start": 0.0,
+        "end": 1.0,
+        "source_file": "data\\raw\\dog\\f5e5e8b0_nohash_1.wav"
+      },
+      {
+        "name": "cat",
+        "start": 1.0,
+        "end": 2.0,
+        "source_file": "data\\raw\\cat\\03cf93b1_nohash_0.wav"
+      },
+      {
+        "name": "bird",
+        "start": 2.0,
+        "end": 3.0,
+        "source_file": "data\\raw\\bird\\00f0204f_nohash_1.wav"
+      },
+      {
+        "name": "bird",
+        "start": 3.0,
+        "end": 4.0,
+        "source_file": "data\\raw\\bird\\27b03931_nohash_0.wav"
+      },
+      {
+        "name": "cat",
+        "start": 4.0,
+        "end": 5.0,
+        "source_file": "data\\raw\\cat\\bfa63751_nohash_0.wav"
+      }
+    ],
+    "questions": [
+      {
+        "question": "What sounds are present?",
+        "type": "perceptual",
+        "answer": "The audio contains dog, cat and bird sounds."
+      },
+      {
+        "question": "How many bird sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 bird sound event(s)."
+      },
+      {
+        "question": "How many cat sound events occur?",
+        "type": "counting",
+        "answer": "There are 2 cat sound event(s)."
+      },
+      {
+        "question": "How many dog sound events occur?",
+        "type": "counting",
+        "answer": "There are 1 dog sound event(s)."
+      },
+      {
+        "question": "What happens after the dog?",
+        "type": "temporal",
+        "answer": "The cat occurs after the dog."
+      },
+      {
+        "question": "What happens before the first cat?",
+        "type": "temporal",
+        "answer": "The dog occurs before the first cat."
+      },
+      {
+        "question": "What happens after the first cat?",
+        "type": "temporal",
+        "answer": "The bird occurs after the first cat."
+      },
+      {
+        "question": "What happens before the first bird?",
+        "type": "temporal",
+        "answer": "The cat occurs before the first bird."
+      },
+      {
+        "question": "What happens after the first bird?",
+        "type": "temporal",
+        "answer": "The bird occurs after the first bird."
+      },
+      {
+        "question": "What happens before the second bird?",
+        "type": "temporal",
+        "answer": "The bird occurs before the second bird."
+      },
+      {
+        "question": "What happens after the second bird?",
+        "type": "temporal",
+        "answer": "The cat occurs after the second bird."
+      },
+      {
+        "question": "What happens before the second cat?",
+        "type": "temporal",
+        "answer": "The bird occurs before the second cat."
+      },
+      {
+        "question": "Which sound occurs first?",
+        "type": "temporal",
+        "answer": "The dog occurs first."
+      },
+      {
+        "question": "Which sound occurs last?",
+        "type": "temporal",
+        "answer": "The cat occurs last."
+      },
+      {
+        "question": "What is the sequence of sounds?",
+        "type": "sequence",
+        "answer": "The sequence is: dog -> cat -> bird -> bird -> cat."
+      },
+      {
+        "question": "How long does the dog sound last?",
+        "type": "duration",
+        "answer": "The dog sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the first cat sound last?",
+        "type": "duration",
+        "answer": "The first cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the first bird sound last?",
+        "type": "duration",
+        "answer": "The first bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second bird sound last?",
+        "type": "duration",
+        "answer": "The second bird sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "How long does the second cat sound last?",
+        "type": "duration",
+        "answer": "The second cat sound lasts approximately 1.00 seconds."
+      },
+      {
+        "question": "Why might a bird sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The bird sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a cat sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The cat sound may simply indicate the presence of that sound source in the recorded environment."
+      },
+      {
+        "question": "Why might a dog sound occur?",
+        "type": "causal",
+        "answer": "The audio alone cannot establish the cause. The dog sound may simply indicate the presence of that sound source in the recorded environment."
+      }
+    ]
+  }
+]
