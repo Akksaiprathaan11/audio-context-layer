@@ -1,86 +1,223 @@
-# Audio Context Layer — Audio Question Answering PoC
+Audio Context Layer
+A proof-of-concept Audio Question Answering system that converts audio into a structured temporal context layer and answers natural-language questions grounded in detected sound events.
+1. Project Overview
+The project is designed to answer questions such as:
+•	What sounds are present?
+•	How many times does a sound occur?
+•	What happens before or after a particular event?
+•	What is the temporal sequence of sounds?
+•	How long does an event last?
+•	Why might a sound occur?
+The system uses a lightweight audio-event classification pipeline followed by structured context construction, question classification, context retrieval, and answer generation.
+2. Architecture
+Audio Clips
+    |
+    v
+1-second Audio Segmentation
+    |
+    v
+MFCC Feature Extraction
+    |
+    v
+Random Forest Audio Classifier
+    |
+    v
+Predicted Sound Events
+    |
+    v
+Audio Context Layer
+- event names
+- start/end timestamps
+- duration
+- confidence
+- event counts
+- event sequence
+    |
+    v
+Question Classifier
+    |
+    v
+Context Retriever
+    |
+    v
+Answer Generator
+    |
+    v
+Natural-language Answer
+3. Dataset
+The project uses 610 original WAV clips from three sound classes:
+Class	Clips
+Bird	193
+Cat	207
+Dog	210
+Total	610
 
-An end-to-end proof of concept that converts audio into a structured temporal context and answers natural-language questions grounded in that context.
+A source-level split is used to reduce leakage across train/validation/test:
+Split	Source clips
+Train	426
+Validation	90
+Test	94
 
-## Architecture
+The project additionally constructs 100 synthetic multi-event contexts:
+Split	Contexts
+Train	70
+Validation	15
+Test	15
+Total	100
 
-Audio -> preprocessing -> audio event detection -> temporal context -> question classification -> context retrieval -> answer generation
+Each context contains a sequence of 1-second sound events. The context annotations store event labels and temporal boundaries.
+4. Generated QA Dataset
+The final QA generator creates 1,878 question-answer pairs.
+Question type	QA pairs
+Perceptual	100
+Counting	236
+Temporal	804
+Duration	402
+Sequence	100
+Causal	236
+Total	1,878
 
-The starter implementation uses a lightweight, deterministic event layer based on configurable annotations/heuristics. This keeps the PoC runnable without requiring a large pretrained checkpoint. A Gemini API key can optionally be used for natural-language answer generation.
-
-## Question types
-
-- Perceptual
-- Counting
-- Temporal
-- Causal/reasoning
-- Duration
-- Sequence
-
-## Quick start
-
-```powershell
+Temporal questions use occurrence-aware references such as first bird, second bird, etc., so repeated events can be distinguished.
+5. Project Structure
+audio-context-layer/
+├── app/
+│   └── app.py
+├── data/
+│   ├── original/
+│   ├── processed/
+│   │   ├── context_audio/
+│   │   ├── context_annotations/
+│   │   ├── contexts/
+│   │   └── predictions/
+│   ├── raw/
+│   │   ├── bird/
+│   │   ├── cat/
+│   │   └── dog/
+│   ├── train.json
+│   ├── validation.json
+│   ├── test.json
+│   └── source_splits.json
+├── models/
+│   └── audio_event_classifier.joblib
+├── results/
+│   ├── classifier_metrics.json
+│   └── evaluation_results.json
+├── src/
+│   ├── prepare_dataset.py
+│   ├── create_source_splits.py
+│   ├── generate_split_contexts.py
+│   ├── generate_qa.py
+│   ├── train_audio_classifier.py
+│   ├── audio_event_predictor.py
+│   ├── context_builder.py
+│   ├── question_classifier.py
+│   ├── retriever.py
+│   ├── answer_generator.py
+│   ├── pipeline.py
+│   └── evaluation.py
+├── tests/
+├── requirements.txt
+├── README.md
+└── report.md
+6. Installation
+Open PowerShell in the project root:
+cd "D:\Visual code\audio-context-layer"
+Create/activate the virtual environment:
 python -m venv venv
 .\venv\Scripts\Activate.ps1
+Install dependencies:
 pip install -r requirements.txt
-```
-
-Run the CLI with an annotated JSON example:
-
-```powershell
-python src/pipeline.py --audio data/raw/audio_001.wav --question "How many times does the dog bark?" --annotations data/processed/audio_001.json
-```
-
-Run the Streamlit demo:
-
-```powershell
-streamlit run app/streamlit_app.py
-```
-
-Run evaluation:
-
-```powershell
+Install Streamlit when required:
+pip install streamlit
+7. Reproduce the Pipeline
+Create source-level splits
+python src/create_source_splits.py
+Generate source-disjoint contexts
+python src/generate_split_contexts.py
+Train the classifier
+python src/train_audio_classifier.py
+Generate event predictions
+Remove-Item .\data\processed\predictions\*.json -Force
+python src/audio_event_predictor.py
+Build the context layer
+python src/context_builder.py
+Generate QA pairs
+python src/generate_qa.py
+Evaluate the end-to-end system
 python src/evaluation.py
-```
+The evaluation output is saved to:
+results/evaluation_results.json
+8. Run the Streamlit Demo
+From the project root:
+streamlit run app/app.py
+Open:
+http://localhost:8501
+The demo contains three pages:
+Audio QA Demo
+Select a generated context, play its WAV file, inspect the event timeline, and ask a natural-language question.
+Context Explorer
+Inspect event counts, timestamps, durations, confidence values, sequence information, and the raw context JSON.
+Evaluation
+Display the saved test-set metrics and the breakdown by question type.
+9. Example Questions
+What sounds are present?
+How many bird sound events occur?
+How many cat sound events occur?
+What happens after the first bird?
+What happens before the second dog?
+Which sound occurs first?
+Which sound occurs last?
+What is the sequence of sounds?
+How long does the first bird sound last?
+Why might a dog sound occur?
+10. Current Evaluation
+The current clean end-to-end test run produced:
+Metric	Result
+Question classification accuracy	100.00%
+Structured fact accuracy	86.88%
+Answer token F1	0.5249
+Pipeline errors	0
 
-## Dataset format
+Question-type structured fact accuracy:
+Type	Accuracy
+Causal	100.00%
+Duration	93.33%
+Counting	83.33%
+Temporal	82.50%
+Perceptual	86.67%
+Sequence	73.33%
 
-Each processed audio JSON contains:
+The standalone source-disjoint audio classifier achieved 86.17% accuracy on the held-out source test set.
+Literal answer exact match is not used as the primary quality indicator because generated answers may be semantically correct while using different wording from the templated reference answers.
+11. Design Decisions
+Source-level splitting
+Source files are split before multi-event contexts are generated so files used in test contexts do not appear in training contexts.
+Fixed one-second events
+All context events are normalized to one second. This gives deterministic boundaries and makes temporal reasoning straightforward.
+Structured context layer
+Instead of asking the answer generator to reason directly over raw audio, the system first creates structured event information. This makes counting, temporal reasoning, duration queries, and sequence questions explicit and inspectable.
+Lightweight classifier
+MFCC mean/std features with a Random Forest provide a reproducible baseline that is practical for a small proof of concept.
+Occurrence-aware temporal questions
+Repeated labels are represented as first/second/third occurrences to avoid ambiguous temporal questions.
+Conservative causal reasoning
+The system does not claim a real-world cause from sound alone. Causal answers explicitly state that audio evidence alone cannot establish the real-world cause.
+12. Limitations
+•	The multi-event audio contexts are synthetically concatenated rather than naturally occurring scenes.
+•	The current vocabulary contains only bird, cat, and dog.
+•	The dataset is small compared with large-scale audio resources.
+•	The classifier is a lightweight baseline rather than a large pretrained audio model.
+•	Some QA metrics are based on structured facts and template-aware heuristics rather than open-ended semantic judging.
+•	Causal evaluation checks whether the system preserves its causal limitation rather than measuring true causal inference.
+•	The current Streamlit demo operates on pre-generated contexts; arbitrary uploaded WAV processing can be added as a future enhancement.
+13. Future Work
+•	Add direct WAV upload and automatic preprocessing.
+•	Expand the sound vocabulary.
+•	Replace the baseline classifier with a pretrained audio model.
+•	Add richer acoustic-scene reasoning.
+•	Add semantic answer evaluation.
+•	Add confidence-aware uncertainty handling.
+•	Evaluate on a larger and more natural audio QA dataset.
+14. License / Dataset Note
+This is an academic proof-of-concept project. Verify the license and attribution requirements for any source audio dataset before redistributing the raw recordings.
 
-```json
-{
-  "audio_id": "audio_001",
-  "duration": 8.0,
-  "environment": "outdoor",
-  "events": [
-    {"name": "dog_bark", "start": 1.0, "end": 1.6, "confidence": 0.95}
-  ],
-  "questions": [
-    {
-      "question": "How many times does the dog bark?",
-      "type": "counting",
-      "answer": "The dog barks 2 times."
-    }
-  ]
-}
-```
-
-Place WAV files in `data/raw/` and matching annotations in `data/processed/`.
-
-## Important
-
-The supplied code is a complete runnable PoC scaffold, but the audio event detector is intentionally lightweight. For a research-grade submission, replace `src/audio_events.py` with a pretrained AudioSet/YAMNet/PANNs-style detector and evaluate its predictions on the held-out test set.
-
-Do not put API keys directly in source code. If using Gemini, set `GEMINI_API_KEY` in the environment.
-
-## Suggested report contents
-
-1. Problem formulation
-2. Research study
-3. Dataset description and construction methodology
-4. Method and design decisions
-5. Experimental setup
-6. Results
-7. Loss curves if a trainable component is used
-8. Error analysis
-9. Observations and limitations
