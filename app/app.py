@@ -38,14 +38,14 @@ except ImportError:
 CONTEXT_AUDIO_DIR = (
     PROJECT_ROOT
     / "data"
-    / "processed"
+    / "demo"
     / "context_audio"
 )
 
 CONTEXT_DIR = (
     PROJECT_ROOT
     / "data"
-    / "processed"
+    / "demo"
     / "contexts"
 )
 

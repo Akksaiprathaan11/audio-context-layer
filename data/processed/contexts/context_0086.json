@@ -1,0 +1,48 @@
+{
+  "audio_file": "context_0086.wav",
+  "duration": 4.0,
+  "events": [
+    {
+      "name": "dog",
+      "start": 0.0,
+      "end": 1.0,
+      "confidence": 0.595
+    },
+    {
+      "name": "cat",
+      "start": 1.0,
+      "end": 2.0,
+      "confidence": 0.62
+    },
+    {
+      "name": "cat",
+      "start": 2.0,
+      "end": 3.0,
+      "confidence": 0.805
+    },
+    {
+      "name": "bird",
+      "start": 3.0,
+      "end": 4.0,
+      "confidence": 0.65
+    }
+  ],
+  "event_counts": {
+    "dog": 1,
+    "cat": 2,
+    "bird": 1
+  },
+  "event_sequence": [
+    "dog",
+    "cat",
+    "cat",
+    "bird"
+  ],
+  "unique_events": [
+    "dog",
+    "cat",
+    "bird"
+  ],
+  "num_events": 4,
+  "num_unique_event_types": 3
+}
