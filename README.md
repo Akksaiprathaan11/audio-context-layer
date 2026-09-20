@@ -1,5 +1,7 @@
 # Audio Context Layer
 
+Deployed Link: https://audio-context-layer-pffig4zy599tratwqdu8ab.streamlit.app/
+
 A proof-of-concept Audio Question Answering system that converts audio into a structured temporal context layer and answers natural-language questions grounded in detected sound events.
 
 ## 1. Project Overview
